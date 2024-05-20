@@ -1,6 +1,15 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container{
   background-color: #fff;
   padding: 20px;
+  margin-top: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   max-width: 400px;
@@ -63,4 +72,15 @@ button:hover {
 
 .result p {
   margin: 5px 0;
+}
+
+h1 {
+  color: #333;
+}
+p {
+  margin: 10px 0;
+}
+.text-container{
+  max-width: 700px;
+  width: 100%;
 }
