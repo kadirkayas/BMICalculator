@@ -2,11 +2,11 @@ import { useState } from "react"
 import "./App.css"
 
 function App() {
-  const[bmi, setBmi] = useState(0)
+  const[bmi, setBmi] = useState("")
   const[rate, setRate] = useState('')
   function calculateBmi(height: number, weight: number) {
-    const bmiV=weight / (height * height)
-    setBmi(bmiV)
+    const bmiV:number=weight / (height * height)
+    setBmi(bmiV.toFixed(2))
     console.log(bmiV);
     if (bmiV < 18.5) {
       setRate("Underweight")
